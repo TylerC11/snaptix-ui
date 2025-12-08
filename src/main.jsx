@@ -6,13 +6,14 @@ import Home from "./routes/Home.jsx";
 import Details from "./routes/Details.jsx";
 import Purchases from "./routes/Purchases.jsx";
 
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/details/:id" element={<Details />} />
-        <Route path="/purchases" element={<Purchases />} />
+        <Route path="/purchases/:id" element={<Purchases />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>,
